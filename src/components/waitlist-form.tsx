@@ -15,6 +15,7 @@ const roleOptions = ['Student', 'Staff or teacher', 'Other'];
 export function WaitlistForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [affiliation, setAffiliation] = useState('');
   const [role, setRole] = useState('Student');
   const [status, setStatus] = useState<Status>({ kind: 'idle' });
 
@@ -22,6 +23,7 @@ export function WaitlistForm() {
     event.preventDefault();
     const trimmedName = name.trim();
     const trimmedEmail = email.trim().toLowerCase();
+    const trimmedAffiliation = affiliation.trim();
 
     if (!trimmedName) {
       setStatus({ kind: 'error', message: 'Please add your name so we know who to look out for.' });
@@ -37,6 +39,7 @@ export function WaitlistForm() {
       full_name: trimmedName.slice(0, 100),
       email: trimmedEmail,
       role,
+      affiliation: trimmedAffiliation ? trimmedAffiliation.slice(0, 200) : null,
     });
 
     if (error) {
@@ -73,6 +76,7 @@ export function WaitlistForm() {
   return (
     <form className="waitlist-card" onSubmit={handleSubmit} noValidate>
       <h3>Save your spot.</h3>
+      <p className="waitlist-intro">Your name and email, then two optional questions.</p>
       <label htmlFor="waitlist-name">Your name</label>
       <input
         id="waitlist-name"
@@ -92,6 +96,19 @@ export function WaitlistForm() {
         maxLength={255}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+      />
+      <label htmlFor="waitlist-affiliation">
+        University or organisation <span>(optional)</span>
+      </label>
+      <input
+        id="waitlist-affiliation"
+        name="affiliation"
+        type="text"
+        autoComplete="organization"
+        maxLength={200}
+        placeholder="Where you study or work"
+        value={affiliation}
+        onChange={(e) => setAffiliation(e.target.value)}
       />
       <label id="waitlist-role-label">I’m a…</label>
       <div className="role-chips" role="group" aria-labelledby="waitlist-role-label">
