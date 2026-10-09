@@ -41,3 +41,4 @@
 - [x] Enlarge and rearrange the founder story so the quotation reads more distinctly.
 - [x] Standardise the page around two or three clear font sizes.
 - [x] Verify the revised interactions and desktop/mobile layouts.
+- [x] Make the demo speaker avatars slightly smaller with more even spacing; verified the selection ring stays clear of neighbours at 1280/390/320px.
