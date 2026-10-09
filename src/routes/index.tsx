@@ -2,6 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowDown, ArrowUpRight, BookOpen, CheckCheck, GraduationCap, MessageSquareText, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CaptionDemo } from '@/components/caption-demo';
+import { WaitlistForm } from '@/components/waitlist-form';
 import nishitPortrait from '@/assets/nishit-portrait.png.asset.json';
 
 export const Route = createFileRoute('/')({
@@ -66,7 +67,14 @@ function Supporters() {
 }
 
 function Waitlist() {
-  return <section id="waitlist" className="waitlist-section page-width"><h2>Focus on the lecture.<br/><em>Not the missing words.</em></h2><p>Help shape a better way to follow along.<br/>Join the Caption+ waitlist for beta access updates.</p><Button variant="caption" size="lg" asChild><a href="https://captionplus.ai/#waitlist" target="_blank" rel="noreferrer">Join the beta waitlist <ArrowUpRight/></a></Button><div className="dsa-note"><GraduationCap size={26} aria-hidden="true"/><h3>Working towards DSA funding</h3><p>We’re working towards making Caption+ free for eligible UK students through Disabled Students’ Allowance. Funding is not yet available.</p></div></section>;
+  return <section id="waitlist" className="waitlist-section"><div className="waitlist-inner page-width">
+    <div className="waitlist-copy">
+      <h2>Focus on the lecture.<br/><em>Not the missing words.</em></h2>
+      <p>Join the beta waitlist. Tell us a little about you, and we’ll be in touch when places open.</p>
+      <div className="dsa-note"><GraduationCap size={26} aria-hidden="true"/><h3>Working towards DSA funding</h3><p>We’re working towards making Caption+ free for eligible UK students through Disabled Students’ Allowance. Funding is not yet available.</p></div>
+    </div>
+    <WaitlistForm/>
+  </div></section>;
 }
 
 function Index() {
