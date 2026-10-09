@@ -16,3 +16,9 @@
 - [x] Add legal and privacy information pages without inventing unapproved policies or business details.
 - [x] Verify desktop/mobile presentation, loaded Medium font and portrait, no overflow/runtime errors, and legal navigation with unique page titles.
 - [ ] Publish full privacy policy and terms: blocked on Nishit's legal operator/contact details, approved data-handling facts, and policy text approval.
+
+## Accessibility and clarity
+- [ ] Enlarge sans-serif text and touch targets, improve focus visibility, and keep the demo link visibly styled.
+- [ ] Improve demo playback, microphone recovery, and accessible transcript controls; verify working flows.
+- [ ] Move UAL pilot information above the demo, format the founder quote with attribution, capitalise Deaf, enlarge Supported by, and replace waitlist copy.
+- [ ] Check layout, keyboard access, and existing policy page metadata.
