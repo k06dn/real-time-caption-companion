@@ -48,3 +48,6 @@
 - [x] Verified submission end-to-end in the preview and confirmed the stored row, then deleted the test row. Owner email notifications are still to be arranged.
 - [x] Make the form more informative: name, email, optional university or organisation, and a role choice; the optional field is stored alongside the rest.
 - [x] Replace the ragged left-aligned role bubbles with one neat option row aligned to the inputs and submit button; verified single-line options, one-line labels, and no overflow at 1280/900/390/320px.
+
+## FAQ presentation
+- [x] Widen the FAQ to the full page container so questions, answers, and divider lines all span edge to edge; verified at 1280/845/390px with no overflow.
