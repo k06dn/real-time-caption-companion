@@ -40,10 +40,25 @@ function Difference() {
 
 function Story() {
   return <section id="story" className="story-band"><div className="story-inner page-width">
-    <div className="founder-portrait"><img src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={400} height={500} loading="lazy"/><p><strong>Nishit</strong><span>Founder, Caption+</span></p></div>
-    <div className="story-content"><h2>Built from lived experience.</h2><figure className="founder-quote"><span className="quote-mark" aria-hidden="true">“</span><blockquote><p>As a Deaf student, I struggled daily with captions that couldn’t keep up with lectures. I built Caption+ because <em>I needed it to exist.</em></p></blockquote><figcaption>Nishit<br/><span>Computer science student at UAL Creative Computing Institute</span></figcaption></figure>
-    <p className="founder-information">Caption+ began with one clear aim: let students focus on what’s being taught, not on filling in the gaps.</p></div>
+    <img className="founder-portrait" src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={200} height={200} loading="lazy"/>
+    <div className="story-content"><h2>Built from lived experience.</h2>
+    <p>Nishit is a Deaf computer science student at UAL Creative Computing Institute. Captions that couldn’t keep up with his lectures made him build Caption+, so students can focus on what’s being taught, not on filling in the gaps.</p></div>
   </div></section>;
+}
+
+const faqs = [
+  { q: 'What is Caption+?', a: 'Live captions that work like subtitles: steady, readable lines that keep up with lectures, slides and code.' },
+  { q: 'Who is the beta for?', a: 'Students who rely on captions to follow teaching, including Deaf and hard of hearing students in the UK.' },
+  { q: 'Why does it matter?', a: 'When captions lag or jump around, you miss the lecture while decoding the text. Caption+ lets you stay with what’s being taught.' },
+  { q: 'Is it co-designed?', a: 'Yes. It’s built by a Deaf student and shaped with beta students, so feedback from real lectures guides what comes next.' },
+  { q: 'What accessibility features does it offer?', a: 'Adjustable caption size, a high-contrast mode, pause and resume, a full transcript, and full keyboard control.' },
+  { q: 'How do I request access?', a: 'Join the beta waitlist below and we’ll send you updates when places open.' },
+];
+
+function Faq() {
+  return <section id="faq" className="faq-section page-width" aria-labelledby="faq-heading"><h2 id="faq-heading">Questions, answered.</h2>
+    <div className="faq-list">{faqs.map((f) => <details key={f.q}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+  </section>;
 }
 
 function Supporters() {
