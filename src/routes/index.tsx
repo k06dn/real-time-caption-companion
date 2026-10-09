@@ -19,7 +19,6 @@ export const Route = createFileRoute('/')({
 function Brand() { return <a href="#" className="brand" aria-label="Caption+ home">Caption<span className="brand-plus">+</span></a>; }
 function Introduction() {
   return <section className="hero page-width">
-    <div className="caption-cascade cascade-opening" aria-hidden="true"/>
     <h1>Live captions that<br/>work like <em>subtitles.</em></h1>
     <p>Stay with the lecture. Follow every voice.<br/>Clear, steady captions that don’t get in the way.</p>
     <div className="hero-actions"><Button variant="caption" size="lg" asChild><a href="#waitlist">Join the waitlist <ArrowUpRight/></a></Button><Button variant="outline" size="lg" asChild><a href="#demo">See it in action <ArrowDown/></a></Button></div>
@@ -34,7 +33,6 @@ function Difference() {
     { icon: MessageSquareText, title: 'A readable rhythm.', text: 'Captions that keep pace with the speaker. Less catching up, more taking it in.', tone: 'peach' },
   ];
   return <section id="difference" className="difference-section page-width">
-    <div className="caption-cascade cascade-middle" aria-hidden="true"/>
     <h2>Not more captions.<br/><em>Better captions.</em></h2>
     <div className="feature-grid">{features.map(({ icon: Icon, title, text, tone }) => <article className="feature" key={title}><span className={`feature-icon icon-${tone}`}><Icon size={25} strokeWidth={1.5} aria-hidden="true"/></span><h3>{title}</h3><p>{text}</p></article>)}</div>
   </section>;
@@ -42,9 +40,9 @@ function Difference() {
 
 function Story() {
   return <section id="story" className="story-band"><div className="story-inner page-width">
-    <div className="founder-portrait"><img src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={285} height={285} loading="lazy"/><p><strong>Nishit</strong><span>Founder, Caption+</span></p></div>
-    <div className="story-content"><h2>A lecture is for learning.<br/>Not piecing words together.</h2><figure className="founder-quote"><blockquote><p>“As a Deaf student, I struggled daily with captions that couldn’t keep up with lectures. I built Caption+ because <em>I needed it to exist.</em>”</p></blockquote><figcaption>— Nishit, founder of Caption+</figcaption></figure>
-    <p className="founder-information">Nishit studies computer science at UAL Creative Computing Institute. As a Deaf student, he knows the effort of following a lecture when captions fall behind. Caption+ began with a simple aim: let students focus on what’s being taught, not on filling in the gaps.</p></div>
+    <div className="founder-portrait"><img src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={340} height={410} loading="lazy"/><p><strong>Nishit</strong><span>Founder, Caption+</span></p></div>
+    <div className="story-content"><h2>Built from lived experience.</h2><figure className="founder-quote"><blockquote><p>“As a Deaf student, I struggled daily with captions that couldn’t keep up with lectures. I built Caption+ because <em>I needed it to exist.</em>”</p></blockquote><figcaption>— Nishit, computer science student at UAL Creative Computing Institute</figcaption></figure>
+    <p className="founder-information">Caption+ began with one clear aim: let students focus on what’s being taught, not on filling in the gaps.</p></div>
   </div></section>;
 }
 
@@ -61,7 +59,6 @@ function Index() {
     <a className="skip-link" href="#main-content">Skip to content</a>
     <header className="site-header page-width"><Brand/><nav aria-label="Main navigation"><a href="#difference">Why Caption+</a><a href="#story">Our story</a></nav><Button variant="ghost" asChild><a href="#waitlist">Join the waitlist <ArrowUpRight/></a></Button></header>
     <main id="main-content" tabIndex={-1}><Introduction/><div className="demo-width"><CaptionDemo/></div><Difference/><Story/><Supporters/><Waitlist/></main>
-    <div className="footer-cascade" aria-hidden="true"><div className="caption-cascade cascade-footer"/></div>
     <footer className="site-footer page-width"><Brand/><nav aria-label="Legal navigation"><Link to="/privacy">Privacy</Link><Link to="/legal">Legal</Link></nav><span>© 2026 Caption+</span></footer>
   </div>;
 }
