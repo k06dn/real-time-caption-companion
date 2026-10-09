@@ -12,3 +12,4 @@
 - Keep the Caption+ homepage composed of focused presentation components with semantic visual tokens in src/styles.css, so the editorial design remains consistent.
 - The interactive demo runs client-side, using a scripted lecture and optional browser speech recognition; it does not imply the production Caption+ engine or speaker identification.
 - Send waitlist registrations to the existing Caption+ website until a registration service is explicitly connected, avoiding false signup confirmations.
+- Pre-optimize route-split UI dependencies and reject outdated optimizer requests in Vite, so hot updates cannot combine mismatched React instances.
