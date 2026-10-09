@@ -30,7 +30,7 @@
  --border: oklch(.9 .009 110); --destructive: oklch(.55 .17 25);
  --paper-green: oklch(.91 .038 125); --paper-blue: oklch(.93 .028 225); --paper-peach: oklch(.95 .03 62);
  --ink-light: oklch(.99 .005 90); --caption-bg: oklch(.19 .012 120); --caption-dim: oklch(.76 .009 110);
- --caption-strip-bg: oklch(.15 .012 120 / .72); --caption-strip-edge: oklch(.99 .005 90 / .22);
+ --caption-strip-bg: oklch(.15 .012 120 / .62); --caption-strip-edge: oklch(.99 .005 90 / .22);
  --caption-high-bg: oklch(.08 .004 110); --caption-high-fg: oklch(1 0 0);
  --story-bg: oklch(.963 .018 125); --shadow: 0 8px 25px oklch(.25 .02 110 / .045);
  --font-heading: 'Ensaio Text', Georgia, serif;
