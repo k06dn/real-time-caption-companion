@@ -156,7 +156,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
 .supporters-grid strong { font-weight:600; }
 .supporters-grid span { font-size:var(--text-body); }
 .waitlist-section { background:var(--story-bg); padding-block:100px; }
-.waitlist-inner { display:grid; grid-template-columns:minmax(0,1fr) 420px; gap:64px; align-items:center; }
+.waitlist-inner { display:grid; grid-template-columns:minmax(0,1fr) 460px; gap:64px; align-items:center; }
 .waitlist-copy h2 { font-size:var(--text-section); line-height:1.08; }
 .waitlist-copy>p { font-size:var(--text-body); line-height:1.65; margin-top:18px; max-width:460px; }
 .dsa-note { margin:34px 0 0; max-width:460px; border-top:1px solid var(--border); padding-top:26px; }
@@ -171,7 +171,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
 .waitlist-card input { width:100%; min-height:48px; padding:0 14px; font-size:var(--text-body); border:1px solid var(--border); border-radius:6px; background:var(--background); color:var(--foreground); font-family:inherit; }
 .waitlist-card input::placeholder { color:var(--muted-foreground); opacity:1; }
 .waitlist-card input:focus-visible { outline:2px solid var(--primary); outline-offset:1px; }
-.role-chips { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:10px; }
+.role-chips { display:grid; grid-template-columns:1fr 1.35fr 1fr; gap:10px; }
 .role-chip { display:flex; align-items:center; justify-content:center; text-align:center; min-height:48px; padding:6px 10px; border:1px solid var(--border); border-radius:6px; background:var(--background); color:var(--foreground); font-size:16px; line-height:1.3; font-family:inherit; cursor:pointer; }
 .role-chip[aria-pressed=true] { background:var(--accent); border-color:var(--primary); font-weight:600; }
 .role-chip:focus-visible { outline:2px solid var(--primary); outline-offset:2px; }
@@ -205,7 +205,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
  .virtual-call { padding:8px; }.call-header { font-size:14px; }.call-layout { grid-template-columns:1fr; grid-template-rows:minmax(0,1fr) 62px; }.shared-screen { padding:12px; }.sharing-badge { font-size:14px; gap:7px; padding:5px 13px 5px 5px; }.sharing-badge .speaker-avatar { width:28px; height:28px; flex-basis:28px; font-size:12px; }.shared-diagram { height:calc(100% - 50px); margin-top:9px; }.call-participants { grid-template-columns:repeat(3,1fr); grid-template-rows:1fr; gap:5px; }.participant-tile { flex-direction:row; gap:4px; font-size:12px; }.participant-tile .speaker-avatar { width:32px; height:32px; flex-basis:32px; font-size:12px; }.code-content { padding:20px 13px; }.code-content pre { font-size:16px; line-height:1.8; }
  .pilot-line { font-size:var(--text-body); margin-top:24px; gap:12px; text-align:left; }.pilot-line strong { display:block; }.difference-section { padding-block:45px; }.feature-grid { grid-template-columns:1fr; gap:34px; margin-top:30px; }.feature-icon { margin-bottom:15px; width:48px; height:48px; }.feature p { max-width:320px; }
  .story-band { padding-block:70px; }.story-inner { flex-direction:column; align-items:flex-start; gap:28px; }.founder-portrait { width:150px; height:150px; }.faq-section { padding-block:60px; }.supporters-section { padding-block:40px; }.supporters-grid { grid-template-columns:1fr; gap:28px; }
- .waitlist-section { padding-block:45px 40px; }.waitlist-section>p { font-size:18px; }.role-chips { grid-template-columns:1fr; gap:8px; }.role-chip { justify-content:flex-start; padding-inline:16px; }.site-footer { padding-block:22px; flex-wrap:wrap; gap:22px; }.site-footer>span { width:100%; }.policy-content { padding-block:35px 50px; }.policy-content h1 { font-size:38px; }
+ .waitlist-section { padding-block:45px 40px; }.waitlist-section>p { font-size:18px; }.waitlist-card { padding:26px 20px; }.role-chips { grid-template-columns:1fr; gap:8px; }.role-chip { justify-content:flex-start; padding-inline:16px; }.site-footer { padding-block:22px; flex-wrap:wrap; gap:22px; }.site-footer>span { width:100%; }.policy-content { padding-block:35px 50px; }.policy-content h1 { font-size:38px; }
 }
 .skip-link { position:absolute; top:8px; left:8px; transform:translateY(-150%); background:var(--foreground); color:var(--background); padding:12px 20px; z-index:50; }
 .skip-link:focus { transform:translateY(0); }
