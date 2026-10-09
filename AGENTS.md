@@ -17,3 +17,4 @@
 - Pre-optimize route-split UI dependencies and reject outdated optimizer requests in Vite, so hot updates cannot combine mismatched React instances.
 - Load supplied heading fonts with local @font-face declarations using CDN asset pointers, so typography stays consistent without bundling uploaded binaries.
 - Keep app-owned legal and privacy content on separate routes using a shared PolicyPage; publish only supplied facts and clearly identify incomplete policies until the owner approves full text.
+- Beta waitlist signups are stored in the `beta_waitlist` table via a browser insert under an anon insert-only RLS policy; duplicate emails are handled in the UI. Why: keeps submissions durable without exposing data or inventing email sends before the owner arranges them.

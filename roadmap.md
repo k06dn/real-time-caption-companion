@@ -42,3 +42,7 @@
 - [x] Standardise the page around two or three clear font sizes.
 - [x] Verify the revised interactions and desktop/mobile layouts.
 - [x] Make the demo speaker avatars slightly smaller with more even spacing; verified the selection ring stays clear of neighbours at 1280/390/320px.
+## Beta waitlist form
+- [x] Replace the external waitlist link with an on-site form in a green band: heading and DSA note on the left, form card on the right.
+- [x] Store signups in a new beta_waitlist table (name, email, role) with insert-only access for visitors; duplicate emails get a friendly "already on the list" message.
+- [x] Verified submission end-to-end in the preview and confirmed the stored row, then deleted the test row. Owner email notifications are still to be arranged.
