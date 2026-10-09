@@ -1,7 +1,8 @@
-import { createFileRoute } from '@tanstack/react-router';
-import { ArrowDown, ArrowUpRight, BookOpen, CheckCheck, MessageSquareText, Plus } from 'lucide-react';
+import { createFileRoute, Link } from '@tanstack/react-router';
+import { ArrowDown, ArrowUpRight, BookOpen, CheckCheck, GraduationCap, MessageSquareText, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CaptionDemo } from '@/components/caption-demo';
+import nishitPortrait from '@/assets/nishit-portrait.png.asset.json';
 
 export const Route = createFileRoute('/')({
   head: () => ({ meta: [
@@ -15,7 +16,7 @@ export const Route = createFileRoute('/')({
   component: Index,
 });
 
-function Brand() { return <a href="#" className="brand" aria-label="Caption+ home"><span className="brand-mark">c<Plus size={12}/></span><span>Caption<span className="brand-plus">+</span></span></a>; }
+function Brand() { return <a href="#" className="brand" aria-label="Caption+ home">Caption<span className="brand-plus">+</span></a>; }
 function Introduction() {
   return <section className="hero page-width">
     <h1>Live captions that<br/>work like <em>subtitles.</em></h1>
@@ -38,21 +39,24 @@ function Difference() {
 
 function Story() {
   return <section id="story" className="story-band"><div className="story-inner page-width">
-    <h2>Built by someone<br/>who needed it.</h2>
-    <div className="story-content"><blockquote>“As a deaf student, I struggled daily with captions that couldn’t keep up with lectures. I built Caption+ because <em>I needed it to exist.</em>”</blockquote>
-    <div className="founder"><span className="founder-initial">N</span><div><strong>Nishit <span>— Founder, Caption+</span></strong><p>Deaf computer science student at UAL Creative Computing Institute</p></div></div></div>
-    <p className="funding">Supported by the UAL Social Purpose Innovation Fund, Pitch It top prize, and a London Social Ventures build grant.</p>
+    <div className="founder-portrait"><img src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={285} height={285} loading="lazy"/><p><strong>Nishit</strong><span>Founder, Caption+</span></p></div>
+    <div className="story-content"><h2>A lecture is for learning.<br/>Not piecing words together.</h2><blockquote>“As a deaf student, I struggled daily with captions that couldn’t keep up with lectures. I built Caption+ because <em>I needed it to exist.</em>”</blockquote>
+    <p className="founder-information">Nishit is a deaf computer science student at UAL Creative Computing Institute. Caption+ grew out of his own experience: trying to follow a lecture while the captions fell behind. He’s building a way to stay with the conversation, not chase it.</p></div>
   </div></section>;
 }
 
+function Supporters() {
+  return <section className="supporters-section page-width" aria-labelledby="supporters-heading"><h2 id="supporters-heading">Supported by</h2><div className="supporters-grid"><div><Award size={22} aria-hidden="true"/><strong>UAL Social Purpose<br/>Innovation Fund</strong></div><div><Award size={22} aria-hidden="true"/><strong>Pitch It</strong><span>Top prize winner</span></div><div><Award size={22} aria-hidden="true"/><strong>London Social Ventures</strong><span>Build grant</span></div></div></section>;
+}
+
 function Waitlist() {
-  return <section id="waitlist" className="waitlist-section page-width"><h2>Your next lecture.<br/><em>A little clearer.</em></h2><p>Join the waitlist for Caption+.</p><Button variant="caption" size="lg" asChild><a href="https://captionplus.ai/#waitlist" target="_blank" rel="noreferrer">Get access to the beta <ArrowUpRight/></a></Button><p className="dsa-note">We’re working towards DSA funding for UK students,<br/>with the aim of making Caption+ free for those eligible.</p></section>;
+  return <section id="waitlist" className="waitlist-section page-width"><h2>Your next lecture.<br/><em>A little clearer.</em></h2><p>Less catching up. More being there.<br/>Join the waitlist to be first to try Caption+.</p><Button variant="caption" size="lg" asChild><a href="https://captionplus.ai/#waitlist" target="_blank" rel="noreferrer">Get access to the beta <ArrowUpRight/></a></Button><div className="dsa-note"><GraduationCap size={26} aria-hidden="true"/><h3>Working towards DSA funding</h3><p>Our aim: Caption+ free for eligible UK students through Disabled Students’ Allowance. Funding is not yet available.</p></div></section>;
 }
 
 function Index() {
   return <div className="site-page">
     <header className="site-header page-width"><Brand/><nav aria-label="Main navigation"><a href="#difference">Why Caption+</a><a href="#story">Our story</a></nav><Button variant="ghost" asChild><a href="#waitlist">Join the waitlist <ArrowUpRight/></a></Button></header>
-    <main><Introduction/><div className="demo-width"><CaptionDemo/></div><p className="pilot-line">Piloting at <strong>UAL Creative Computing Institute</strong></p><Difference/><Story/><Waitlist/></main>
-    <footer className="site-footer page-width"><Brand/><span>© 2026 Caption+</span></footer>
+    <main><Introduction/><div className="demo-width"><CaptionDemo/></div><div className="pilot-line page-width"><GraduationCap size={28} aria-hidden="true"/><p>Piloting at <strong>UAL Creative Computing Institute</strong></p></div><Difference/><Story/><Supporters/><Waitlist/></main>
+    <footer className="site-footer page-width"><Brand/><nav aria-label="Legal navigation"><Link to="/privacy">Privacy</Link><Link to="/legal">Legal</Link></nav><span>© 2026 Caption+</span></footer>
   </div>;
 }
