@@ -18,7 +18,7 @@
 - [ ] Publish full privacy policy and terms: blocked on Nishit's legal operator/contact details, approved data-handling facts, and policy text approval.
 
 ## Accessibility and clarity
-- [ ] Enlarge sans-serif text and touch targets, improve focus visibility, and keep the demo link visibly styled.
-- [ ] Improve demo playback, microphone recovery, and accessible transcript controls; verify working flows.
-- [ ] Move UAL pilot information above the demo, format the founder quote with attribution, capitalise Deaf, enlarge Supported by, and replace waitlist copy.
-- [ ] Check layout, keyboard access, and existing policy page metadata.
+- [x] Enlarge sans-serif text and touch targets, improve focus visibility, and keep the demo link visibly styled.
+- [x] Improve demo playback, microphone recovery, and accessible transcript controls; verified playback, pause, speaker switching, scene panels, export, focus return, and recovery. Actual microphone speech remains unverified.
+- [x] Move UAL pilot information above the demo, format the founder quote with attribution, capitalise Deaf, enlarge Supported by, and replace waitlist copy.
+- [x] Check layout at 1280/845/390/320px, keyboard access, and existing policy page metadata; no overflow, runtime errors, or automated WCAG A/AA findings in the tested homepage state.
