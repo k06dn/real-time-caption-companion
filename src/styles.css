@@ -215,13 +215,3 @@ a:focus-visible,button:focus-visible,[role=tab]:focus-visible { outline:2px soli
   .waitlist-inner { grid-template-columns:1fr; gap:40px; }
 }
 
-/* Highlighter strokes — decorative only */
-.scribble { position: relative; display: inline-block; white-space: nowrap; isolation: isolate; }
-.scribble::before, .scribble::after { content: ""; position: absolute; z-index: -1; left: -.08em; right: -.08em; border-radius: .2em .5em .3em .45em; background: var(--highlight); transform-origin: left center; transform: scaleX(0); animation: highlight-stroke .9s ease-out forwards; pointer-events: none; }
-.scribble::before { top: .18em; height: .42em; transform: scaleX(0) rotate(-1deg); animation-delay: .2s; }
-.scribble::after { top: .52em; height: .4em; animation-delay: 1.1s; }
-@keyframes highlight-stroke { to { transform: scaleX(1) rotate(var(--r, 0deg)); } }
-.scribble::before { --r: -1deg; }
-@media (prefers-reduced-motion: reduce) { .scribble::before, .scribble::after { animation: none; transform: scaleX(1); } }
-:root { --highlight: color-mix(in oklab, var(--primary) 22%, transparent); }
-.story-band .scribble, .waitlist-section .scribble { --highlight: color-mix(in oklab, var(--background) 28%, transparent); }
