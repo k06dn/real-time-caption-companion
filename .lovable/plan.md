@@ -1,9 +1,8 @@
 # Refine the demo and founder story
 
 ## Demo
-- Reframe the three views as parts of a virtual lecture call: speaker view, shared learning material, and shared code.
-- Add a restrained call header and participant tiles so Caption+ reads as an add-on within the meeting.
-- Adapt the memory-management material into a shared screen rather than a standalone slide.
+- Keep the Lecture and Code views unchanged.
+- Reframe only the Slides view as a virtual lecture call, with the memory-management material shown as a shared screen and small participant tiles.
 - Replace the always-open accessibility row with one icon button using the supplied accessibility symbol; expand and collapse the caption settings with keyboard and screen-reader support.
 
 ## Story and typography
