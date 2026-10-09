@@ -40,8 +40,8 @@ function Difference() {
 
 function Story() {
   return <section id="story" className="story-band"><div className="story-inner page-width">
-    <div className="founder-portrait"><img src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={340} height={410} loading="lazy"/><p><strong>Nishit</strong><span>Founder, Caption+</span></p></div>
-    <div className="story-content"><h2>Built from lived experience.</h2><figure className="founder-quote"><blockquote><p>“As a Deaf student, I struggled daily with captions that couldn’t keep up with lectures. I built Caption+ because <em>I needed it to exist.</em>”</p></blockquote><figcaption>— Nishit, computer science student at UAL Creative Computing Institute</figcaption></figure>
+    <div className="founder-portrait"><img src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={400} height={500} loading="lazy"/><p><strong>Nishit</strong><span>Founder, Caption+</span></p></div>
+    <div className="story-content"><h2>Built from lived experience.</h2><figure className="founder-quote"><span className="quote-mark" aria-hidden="true">“</span><blockquote><p>As a Deaf student, I struggled daily with captions that couldn’t keep up with lectures. I built Caption+ because <em>I needed it to exist.</em></p></blockquote><figcaption>Nishit<br/><span>Computer science student at UAL Creative Computing Institute</span></figcaption></figure>
     <p className="founder-information">Caption+ began with one clear aim: let students focus on what’s being taught, not on filling in the gaps.</p></div>
   </div></section>;
 }
