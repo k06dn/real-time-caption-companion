@@ -1,0 +1,2 @@
+ALTER TABLE public.beta_waitlist ADD COLUMN IF NOT EXISTS affiliation text;
+COMMENT ON COLUMN public.beta_waitlist.affiliation IS 'Optional university, college or organisation the person shared when joining the beta waitlist.';

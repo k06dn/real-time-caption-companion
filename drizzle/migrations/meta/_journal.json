@@ -8,6 +8,13 @@
       "when": 1791564928271,
       "tag": "0000_create_beta_waitlist",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791565549243,
+      "tag": "0001_add_waitlist_affiliation",
+      "breakpoints": true
     }
   ]
 }
