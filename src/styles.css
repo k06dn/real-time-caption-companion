@@ -214,3 +214,16 @@ a:focus-visible,button:focus-visible,[role=tab]:focus-visible { outline:2px soli
   .waitlist-section { padding-block:70px; }
   .waitlist-inner { grid-template-columns:1fr; gap:40px; }
 }
+
+/* Pencil doodles — decorative only */
+.scribble { position: relative; display: inline-block; white-space: nowrap; }
+.scribble-mark { position: absolute; pointer-events: none; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; opacity: .55; }
+.scribble-under { left: -2%; width: 104%; bottom: -.12em; height: .28em; stroke-width: 2.2; vector-effect: non-scaling-stroke; color: var(--primary); }
+.scribble-circle { left: -10%; top: -22%; width: 120%; height: 144%; stroke-width: 1.8; vector-effect: non-scaling-stroke; color: var(--primary); }
+.doodle { display: inline-block; fill: none; stroke: var(--primary); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: .6; pointer-events: none; vertical-align: top; }
+.doodle-hero { width: .45em; height: .35em; margin-left: .1em; }
+.supporters-title { display: flex; align-items: center; justify-content: center; gap: .5em; }
+.doodle-left { width: 1.1em; height: .55em; }
+.doodle-right { width: .5em; height: .4em; transform: rotate(12deg); }
+.doodle-arrow { display: block; width: 72px; height: 40px; margin-top: 8px; transform: rotate(-6deg); stroke: currentColor; }
+.story-band .scribble-mark, .waitlist-section .scribble-mark { color: currentColor; }
