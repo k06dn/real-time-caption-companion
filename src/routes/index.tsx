@@ -2,6 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowDown, ArrowUpRight, BookOpen, CheckCheck, GraduationCap, MessageSquareText, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CaptionDemo } from '@/components/caption-demo';
+import { WaitlistForm } from '@/components/waitlist-form';
 import nishitPortrait from '@/assets/nishit-portrait.png.asset.json';
 
 export const Route = createFileRoute('/')({
