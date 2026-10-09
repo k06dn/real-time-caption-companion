@@ -46,3 +46,5 @@
 - [x] Replace the external waitlist link with an on-site form in a green band: heading and DSA note on the left, form card on the right.
 - [x] Store signups in a new beta_waitlist table (name, email, role) with insert-only access for visitors; duplicate emails get a friendly "already on the list" message.
 - [x] Verified submission end-to-end in the preview and confirmed the stored row, then deleted the test row. Owner email notifications are still to be arranged.
+- [x] Make the form more informative: name, email, optional university or organisation, and a role choice; the optional field is stored alongside the rest.
+- [x] Replace the ragged left-aligned role bubbles with one neat option row aligned to the inputs and submit button; verified single-line options, one-line labels, and no overflow at 1280/900/390/320px.
