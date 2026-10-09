@@ -20,7 +20,7 @@ export const Route = createFileRoute('/')({
 function Brand() { return <a href="#" className="brand" aria-label="Caption+ home">Caption<span className="brand-plus">+</span></a>; }
 function Introduction() {
   return <section className="hero page-width">
-    <h1>Live captions that<br/>work like <em><Scribble>subtitles.</Scribble></em></h1>
+    <h1>Live captions that<br/>work like <em>subtitles.</em></h1>
     <p>Stay with the lecture. Follow every voice.<br/>Clear, steady captions that don’t get in the way.</p>
     <div className="hero-actions"><Button variant="caption" size="lg" asChild><a href="#waitlist">Join the waitlist <ArrowUpRight/></a></Button><Button variant="outline" size="lg" asChild><a href="#demo">See it in action <ArrowDown/></a></Button></div>
     <div className="pilot-line"><GraduationCap size={28} aria-hidden="true"/><p>Piloting at <strong>UAL Creative Computing Institute</strong></p></div>
@@ -34,7 +34,7 @@ function Difference() {
     { icon: MessageSquareText, title: 'A readable rhythm.', text: 'Captions that keep pace with the speaker. Less catching up, more taking it in.', tone: 'peach' },
   ];
   return <section id="difference" className="difference-section page-width">
-    <h2>Not more captions.<br/><em><Scribble>Better</Scribble> captions.</em></h2>
+    <h2>Not more captions.<br/><em>Better captions.</em></h2>
     <div className="feature-grid">{features.map(({ icon: Icon, title, text, tone }) => <article className="feature" key={title}><span className={`feature-icon icon-${tone}`}><Icon size={25} strokeWidth={1.5} aria-hidden="true"/></span><h3>{title}</h3><p>{text}</p></article>)}</div>
   </section>;
 }
@@ -42,7 +42,7 @@ function Difference() {
 function Story() {
   return <section id="story" className="story-band"><div className="story-inner page-width">
     <img className="founder-portrait" src={nishitPortrait.url} alt="Nishit, founder of Caption+" width={200} height={200} loading="lazy"/>
-    <div className="story-content"><h2>Built from <Scribble>lived experience.</Scribble></h2>
+    <div className="story-content"><h2>Built from lived experience.</h2>
     <p>Nishit is a Deaf computer science student at UAL Creative Computing Institute. Captions that couldn’t keep up with his lectures made him build Caption+, so students can focus on what’s being taught, not on filling in the gaps.</p></div>
   </div></section>;
 }
