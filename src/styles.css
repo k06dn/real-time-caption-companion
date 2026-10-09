@@ -139,7 +139,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
 .founder-portrait { width:200px; height:200px; flex:none; border-radius:50%; object-fit:cover; object-position:center top; }
 .story-inner h2 { font-size:var(--text-section); line-height:1.08; margin-bottom:18px; }
 .story-content p { font-size:var(--text-body); line-height:1.65; max-width:560px; }
-.faq-section { padding-block:90px; max-width:820px; }
+.faq-section { padding-block:90px; }
 .faq-section h2 { font-size:var(--text-section); text-align:center; margin-bottom:36px; }
 .faq-list details { border-bottom:1px solid var(--border); }
 .faq-list summary { cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:16px; padding:22px 0; min-height:44px; font-size:var(--text-body); font-weight:600; }
@@ -147,7 +147,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
 .faq-list summary::after { content:"+"; color:var(--primary); font-size:1.4em; line-height:1; }
 .faq-list details[open] summary::after { content:"–"; }
 .faq-list summary:focus-visible { outline:2px solid var(--primary); outline-offset:4px; }
-.faq-list details p { font-size:var(--text-body); line-height:1.65; padding-bottom:22px; max-width:640px; }
+.faq-list details p { font-size:var(--text-body); line-height:1.65; padding-bottom:22px; }
 .supporters-section { text-align:center; padding-block:48px; border-bottom:1px solid var(--border); }
 .supporters-section h2 { font-size:var(--text-section); }
 .supporters-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:25px; margin-top:28px; }
