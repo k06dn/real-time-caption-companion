@@ -144,7 +144,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
 .quote-mark { position:absolute; left:0; top:16px; font-family:var(--font-heading); font-size:82px; line-height:1; color:var(--primary); }
 .founder-quote figcaption { font-size:var(--text-body); margin-top:28px; font-weight:600; }
 .founder-quote figcaption span { font-weight:400; }
-.story-content blockquote { font-family:var(--font-heading); font-weight:500; font-size:40px; line-height:1.28; margin:0; }
+.story-content blockquote { font-family:var(--font-heading); font-weight:500; font-size:var(--text-section); line-height:1.24; margin:0; }
 .story-content blockquote em { background:var(--paper-green); padding:0 4px; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
 .founder-information { font-size:var(--text-body); line-height:1.65; margin-top:36px; max-width:560px; }
 .supporters-section { text-align:center; padding-block:48px; border-bottom:1px solid var(--border); }
@@ -174,7 +174,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
 .policy-content a { text-decoration:underline; text-underline-offset:3px; }
 .policy-note { border-left:3px solid var(--primary); padding-left:18px; }
 @media(max-width:900px) {
- :root { --text-display:64px; --text-section:42px; }.page-width,.demo-width { width:calc(100% - 48px); }.feature-grid { gap:25px; }.story-inner { grid-template-columns:300px minmax(0,1fr); gap:48px; }.story-content blockquote { font-size:34px; }
+ :root { --text-display:64px; --text-section:42px; }.page-width,.demo-width { width:calc(100% - 48px); }.feature-grid { gap:25px; }.story-inner { grid-template-columns:300px minmax(0,1fr); gap:48px; }
 }
 @media(max-width:600px) {
  :root { --text-display:42px; --text-section:35px; }
@@ -184,7 +184,7 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
  .demo-stage { height:390px; }.scene-panel>img { object-position:62% center; }.caption-strip { width:calc(100% - 24px); padding:16px; bottom:16px; min-height:190px; }.caption-words { font-size:20px; line-height:1.5; min-height:90px; }.caption-speaker { margin-bottom:12px; }.demo-controls { padding:12px; flex-wrap:wrap; gap:10px; }.playback-controls { gap:6px; }.demo-actions { gap:6px; flex-wrap:wrap; }.demo-actions button { font-size:16px; }.demo-footnote { font-size:16px; line-height:1.6; }
  .virtual-call { padding:8px; }.call-header { font-size:14px; }.call-layout { grid-template-columns:1fr; grid-template-rows:minmax(0,1fr) 62px; }.shared-screen { padding:16px; }.shared-screen h3 { font-size:29px; }.call-participants { grid-template-columns:repeat(3,1fr); grid-template-rows:1fr; gap:5px; }.participant-tile { flex-direction:row; gap:4px; font-size:12px; }.participant-tile .speaker-avatar { width:32px; height:32px; flex-basis:32px; font-size:12px; }.memory-flow { width:100%; align-items:stretch; gap:4px; margin-top:14px; }.memory-flow>div { display:flex; flex-direction:column; min-width:0; flex:1; padding:8px 6px; }.memory-flow span { font-size:12px; }.memory-flow strong { font-size:14px; overflow-wrap:anywhere; }.memory-flow small { display:none; }.memory-flow i { align-self:center; flex:0 0 auto; font-size:15px; }.code-content { padding:20px 13px; }.code-content pre { font-size:16px; line-height:1.8; }
  .pilot-line { font-size:var(--text-body); margin-top:24px; gap:12px; text-align:left; }.pilot-line strong { display:block; }.difference-section { padding-block:45px; }.feature-grid { grid-template-columns:1fr; gap:34px; margin-top:30px; }.feature-icon { margin-bottom:15px; width:48px; height:48px; }.feature p { max-width:320px; }
- .story-band { padding-block:70px; }.story-inner { grid-template-columns:1fr; gap:42px; }.founder-portrait { max-width:320px; }.story-content blockquote { font-size:32px; }.founder-quote { padding:28px 0 0 42px; }.quote-mark { font-size:68px; }.supporters-section { padding-block:40px; }.supporters-grid { grid-template-columns:1fr; gap:28px; }
+ .story-band { padding-block:70px; }.story-inner { grid-template-columns:1fr; gap:42px; }.founder-portrait { max-width:320px; }.founder-quote { padding:28px 0 0 42px; }.quote-mark { font-size:68px; }.supporters-section { padding-block:40px; }.supporters-grid { grid-template-columns:1fr; gap:28px; }
  .waitlist-section { padding-block:45px 40px; }.waitlist-section>p { font-size:18px; }.site-footer { padding-block:22px; flex-wrap:wrap; gap:22px; }.site-footer>span { width:100%; }.policy-content { padding-block:35px 50px; }.policy-content h1 { font-size:38px; }
 }
 .skip-link { position:absolute; top:8px; left:8px; transform:translateY(-150%); background:var(--foreground); color:var(--background); padding:12px 20px; z-index:50; }

@@ -36,8 +36,8 @@
 - [x] Verify the cleaned homepage at desktop and mobile widths and recheck demo controls.
 
 ## Virtual-call slide and typography
-- [ ] Make only the Slides demo view resemble a virtual call with shared learning material; keep Lecture and Code unchanged.
-- [ ] Collapse caption accessibility controls behind the supplied person icon.
-- [ ] Enlarge and rearrange the founder story so the quotation reads more distinctly.
-- [ ] Standardise the page around two or three clear font sizes.
-- [ ] Verify the revised interactions and desktop/mobile layouts.
+- [x] Make only the Slides demo view resemble a virtual call with shared learning material; keep Lecture and Code unchanged.
+- [x] Collapse caption accessibility controls behind the supplied person icon.
+- [x] Enlarge and rearrange the founder story so the quotation reads more distinctly.
+- [x] Standardise the page around two or three clear font sizes.
+- [x] Verify the revised interactions and desktop/mobile layouts.
