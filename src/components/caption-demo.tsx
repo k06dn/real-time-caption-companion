@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowDownToLine, AudioLines, CircleHalf, Code2, Pause, Play, Presentation, RotateCcw, X } from 'lucide-react';
+import { ArrowDownToLine, AudioLines, Code2, Contrast, Pause, Play, Presentation, RotateCcw, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import lectureImage from '@/assets/lecture.jpg';
@@ -62,7 +62,7 @@ export function CaptionDemo() {
       <div className="demo-toolbar"><TabsList aria-label="Lecture view"><TabsTrigger value="lecture"><AudioLines size={18}/> <span>Lecture</span></TabsTrigger><TabsTrigger value="slides"><Presentation size={18}/> <span>Slides</span></TabsTrigger><TabsTrigger value="code"><Code2 size={18}/> <span>Code</span></TabsTrigger></TabsList><div className="speaker-roster" aria-label="Sample speakers">{speakers.map(person => <Button key={person.name} variant="ghost" size="icon" className={`speaker-avatar avatar-${person.tone}`} aria-label={`Show ${person.name}'s captions`} aria-pressed={current.speaker === person.name} title={`${person.name} · ${person.role}`} onClick={() => selectSpeaker(person.name)}>{person.initials}</Button>)}</div></div>
       <div className="caption-settings" aria-label="Caption controls">
         <div className="size-controls" role="group" aria-label="Caption size"><span>Caption size</span>{(['small', 'medium', 'large'] as const).map((size, index) => <Button key={size} variant="ghost" size="icon" className={`size-choice size-choice-${size}`} aria-label={`${size} captions`} aria-pressed={captionSize === size} onClick={() => setCaptionSize(size)}>A<span aria-hidden="true">{index === 0 ? '−' : index === 2 ? '+' : ''}</span></Button>)}</div>
-        <div className="setting-actions"><Button variant="ghost" aria-pressed={highContrast} onClick={() => setHighContrast(value => !value)}><CircleHalf/><span>High contrast</span></Button><Button variant="ghost" aria-label={playing ? 'Pause transcript' : 'Resume transcript'} aria-pressed={!playing} onClick={() => { if (position >= total) setPosition(0); setPlaying(value => !value); }}>{playing ? <Pause/> : <Play/>}<span>{playing ? 'Pause' : 'Resume'}</span></Button></div>
+        <div className="setting-actions"><Button variant="ghost" aria-pressed={highContrast} onClick={() => setHighContrast(value => !value)}><Contrast/><span>High contrast</span></Button><Button variant="ghost" aria-label={playing ? 'Pause transcript' : 'Resume transcript'} aria-pressed={!playing} onClick={() => { if (position >= total) setPosition(0); setPlaying(value => !value); }}>{playing ? <Pause/> : <Play/>}<span>{playing ? 'Pause' : 'Resume'}</span></Button></div>
         <span className="sr-only" aria-live="polite">Captions set to {captionSize}. {highContrast ? 'High contrast on.' : 'Standard contrast.'} Transcript {playing ? 'playing.' : 'paused.'}</span>
       </div>
       <div className={`demo-stage scene-${scene}`}>
