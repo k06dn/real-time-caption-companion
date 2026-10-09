@@ -34,3 +34,10 @@
 - [x] Remove all halftone-dot decoration, including the demo slide pattern.
 - [x] Simplify the founder story into a clearer portrait, quote, and concise context.
 - [x] Verify the cleaned homepage at desktop and mobile widths and recheck demo controls.
+
+## Virtual-call slide and typography
+- [ ] Make only the Slides demo view resemble a virtual call with shared learning material; keep Lecture and Code unchanged.
+- [ ] Collapse caption accessibility controls behind the supplied person icon.
+- [ ] Enlarge and rearrange the founder story so the quotation reads more distinctly.
+- [ ] Standardise the page around two or three clear font sizes.
+- [ ] Verify the revised interactions and desktop/mobile layouts.
