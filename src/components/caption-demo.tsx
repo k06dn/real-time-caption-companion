@@ -28,10 +28,10 @@ export function CaptionDemo() {
   const total = wordCounts.reduce((a, b) => a + b, 0);
   let remaining = position;
   let lineIndex = 0;
-  while (lineIndex < lecture.length - 1 && remaining > wordCounts[lineIndex]) {
-    remaining -= wordCounts[lineIndex]; lineIndex++;
+  while (lineIndex < lecture.length - 1 && remaining > (wordCounts[lineIndex] ?? 0)) {
+    remaining -= wordCounts[lineIndex] ?? 0; lineIndex++;
   }
-  const current = lecture[lineIndex];
+  const current = lecture[lineIndex] ?? { speaker: 'Lecturer', text: '' };
   const words = current.text.split(' ');
   const transcript = lecture.slice(0, lineIndex).map(line => `${line.speaker}: ${line.text}`).concat(`${current.speaker}: ${words.slice(0, remaining).join(' ')}`).join('\n\n');
 
@@ -56,8 +56,11 @@ export function CaptionDemo() {
     recognition.onresult = event => {
       let interim = '';
       for (let i = event.resultIndex; i < event.results.length; i++) {
-        if (event.results[i].isFinal) { const text = event.results[i][0].transcript; setMicFinal(prev => `${prev} ${text}`.trim()); }
-        else interim += event.results[i][0].transcript;
+        const result = event.results[i];
+        const text = result?.[0]?.transcript;
+        if (!result || !text) continue;
+        if (result.isFinal) { setMicFinal(prev => `${prev} ${text}`.trim()); }
+        else interim += text;
       }
       setMicText(interim);
     };
