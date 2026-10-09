@@ -218,3 +218,11 @@ a:focus-visible,button:focus-visible,[role=tab]:focus-visible { outline:2px soli
   .waitlist-inner { grid-template-columns:1fr; gap:40px; }
 }
 
+@media(max-width:600px) {
+  .demo-controls>p { flex:1 0 100%; padding-left:0; }
+  .demo-controls .play-toggle { flex:1 1 0; }
+  .demo-actions { flex:1 1 0; }
+  .demo-actions button { width:100%; }
+  .faq-list summary { padding-block:18px; }
+  .story-inner { align-items:center; text-align:center; }
+}
