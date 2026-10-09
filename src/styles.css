@@ -43,6 +43,7 @@
  h1,h2,h3,p { margin: 0; }
  ::selection { background: var(--paper-green); color: var(--foreground); }
 }
+.site-page { overflow:hidden; }
 .page-width { width: min(1040px, calc(100% - 80px)); margin-inline: auto; }
 .site-header { display:flex; align-items:center; justify-content:space-between; height:94px; gap:24px; }
 .brand { display:inline-flex; align-items:center; gap:0; font-weight:650; font-size:24px; }

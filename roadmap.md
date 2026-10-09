@@ -28,4 +28,4 @@
 - [x] Add keyboard-accessible caption size, contrast, and playback controls.
 - [x] Redesign the Memory management slide as a clear allocate-use-release flow.
 - [x] Add a subtle, static halftone cascade motif across key page transitions.
-- [ ] Verify controls, keyboard flow, reduced motion, transcript actions, and desktop/mobile layouts.
+- [x] Verify controls, keyboard flow, reduced motion, transcript actions, and desktop/mobile layouts.
