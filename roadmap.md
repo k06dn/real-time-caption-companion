@@ -3,3 +3,9 @@
 - [x] Add interactive lecture/code/slides demo, browser microphone option, and transcript export.
 - [x] Connect waitlist links to the existing Caption+ website, without claiming new signup storage.
 - [x] Verify desktop/mobile layout, playback, scene switches, and transcript download; actual microphone speech remains unverified.
+
+## Calm, minimal revision
+- [x] Remove all eyebrows and simplify the page into a clear introduction, demo, benefits, story, and waitlist.
+- [x] Use the supplied Ensaio serif, retain green accents, and add meaningful icons. Supplied fonts are trial editions; publishing license must be checked by the owner.
+- [x] Show multiple scripted speakers with initials portraits, without green status lights.
+- [x] Verify desktop/mobile layout, font loading, all three speaker selections, playback controls, scene changes, and transcript export; no runtime errors or mobile overflow. Actual microphone speech remains unverified.
