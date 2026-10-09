@@ -155,13 +155,29 @@ h2 { font-family:var(--font-heading); font-weight:500; font-size:var(--text-sect
 .supporters-grid svg { color:var(--primary); }
 .supporters-grid strong { font-weight:600; }
 .supporters-grid span { font-size:var(--text-body); }
-.waitlist-section { text-align:center; padding-block:65px 55px; }
-.waitlist-section>p { font-size:20px; color:var(--foreground); margin-top:20px; line-height:1.7; }
-.waitlist-section>a { margin-top:24px; min-height:48px; font-size:17px; }
-.dsa-note { margin:34px auto 0; max-width:540px; border-top:1px solid var(--border); padding-top:28px; }
-.dsa-note>svg { margin:0 auto 10px; color:var(--primary); }
+.waitlist-section { background:var(--story-bg); padding-block:100px; }
+.waitlist-inner { display:grid; grid-template-columns:minmax(0,1fr) 420px; gap:64px; align-items:center; }
+.waitlist-copy h2 { font-size:var(--text-section); line-height:1.08; }
+.waitlist-copy>p { font-size:var(--text-body); line-height:1.65; margin-top:18px; max-width:460px; }
+.dsa-note { margin:34px 0 0; max-width:460px; border-top:1px solid var(--border); padding-top:26px; }
+.dsa-note>svg { color:var(--primary); margin-bottom:10px; }
 .dsa-note h3 { font-size:22px; font-weight:600; }
 .dsa-note p { font-size:18px; line-height:1.7; margin-top:10px; }
+.waitlist-card { background:var(--background); border:1px solid var(--border); border-radius:8px; box-shadow:var(--shadow); padding:32px 30px; }
+.waitlist-card h3 { font-size:22px; font-weight:600; }
+.waitlist-card label { display:block; font-size:var(--text-body); font-weight:600; margin:20px 0 8px; }
+.waitlist-card input { width:100%; min-height:48px; padding:0 14px; font-size:var(--text-body); border:1px solid var(--border); border-radius:6px; background:var(--background); color:var(--foreground); font-family:inherit; }
+.waitlist-card input:focus-visible { outline:2px solid var(--primary); outline-offset:1px; }
+.role-chips { display:flex; gap:10px; flex-wrap:wrap; }
+.role-chip { min-height:44px; padding:8px 18px; border:1px solid var(--border); border-radius:999px; background:var(--background); color:var(--foreground); font-size:var(--text-body); font-family:inherit; cursor:pointer; }
+.role-chip[aria-pressed=true] { background:var(--accent); outline:1px solid var(--primary); outline-offset:-1px; font-weight:600; }
+.role-chip:focus-visible { outline:2px solid var(--primary); outline-offset:2px; }
+.waitlist-submit { margin-top:24px; width:100%; }
+.waitlist-status { margin-top:14px; font-size:16px; line-height:1.6; }
+.waitlist-status:not(:empty) { font-weight:500; }
+.waitlist-done { display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+.waitlist-done svg { color:var(--primary); }
+.waitlist-done h3 { font-size:22px; font-weight:600; }
 .site-footer { display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--border); padding-block:26px; }
 .site-footer .brand { font-size:20px; }
 .site-footer nav { display:flex; gap:24px; font-size:17px; }
