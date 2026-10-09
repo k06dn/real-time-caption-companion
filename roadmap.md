@@ -11,7 +11,8 @@
 - [x] Verify desktop/mobile layout, font loading, all three speaker selections, playback controls, scene changes, and transcript export; no runtime errors or mobile overflow. Actual microphone speech remains unverified.
 
 ## Founder and typography refinement
-- [ ] Use Medium headings with tighter spacing, darker sans text, and text-only branding.
-- [ ] Add Nishit's portrait, improved founder narrative, prominent pilot/supporter details, and clear DSA-in-progress copy.
-- [ ] Add legal and privacy pages without inventing unapproved policies or business details.
-- [ ] Verify desktop/mobile presentation and legal navigation.
+- [x] Use Medium headings with tighter spacing, darker sans text, and text-only branding.
+- [x] Add Nishit's portrait, improved founder narrative, prominent pilot/supporter details, and clear DSA-in-progress copy.
+- [x] Add legal and privacy information pages without inventing unapproved policies or business details.
+- [x] Verify desktop/mobile presentation, loaded Medium font and portrait, no overflow/runtime errors, and legal navigation with unique page titles.
+- [ ] Publish full privacy policy and terms: blocked on Nishit's legal operator/contact details, approved data-handling facts, and policy text approval.
