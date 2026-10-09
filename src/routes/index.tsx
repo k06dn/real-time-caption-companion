@@ -63,13 +63,13 @@ function Faq() {
 }
 
 function Supporters() {
-  return <section className="supporters-section page-width" aria-labelledby="supporters-heading"><h2 id="supporters-heading" className="supporters-title"><Scribble>Supported by</Scribble></h2><div className="supporters-grid"><div><Award size={22} aria-hidden="true"/><strong>UAL Social Purpose<br/>Innovation Fund</strong></div><div><Award size={22} aria-hidden="true"/><strong>Pitch It</strong><span>Top prize winner</span></div><div><Award size={22} aria-hidden="true"/><strong>London Social Ventures</strong><span>Build grant</span></div></div></section>;
+  return <section className="supporters-section page-width" aria-labelledby="supporters-heading"><h2 id="supporters-heading" className="supporters-title">Supported by</h2><div className="supporters-grid"><div><Award size={22} aria-hidden="true"/><strong>UAL Social Purpose<br/>Innovation Fund</strong></div><div><Award size={22} aria-hidden="true"/><strong>Pitch It</strong><span>Top prize winner</span></div><div><Award size={22} aria-hidden="true"/><strong>London Social Ventures</strong><span>Build grant</span></div></div></section>;
 }
 
 function Waitlist() {
   return <section id="waitlist" className="waitlist-section"><div className="waitlist-inner page-width">
     <div className="waitlist-copy">
-      <h2>Focus on the lecture.<br/><em>Not the <Scribble>missing words.</Scribble></em></h2>
+      <h2>Focus on the lecture.<br/><em>Not the missing words.</em></h2>
       <p>Join the beta waitlist. Tell us a little about you, and we’ll be in touch when places open.</p>
       <div className="dsa-note"><GraduationCap size={26} aria-hidden="true"/><h3>Working towards DSA funding</h3><p>We’re working towards making Caption+ free for eligible UK students through Disabled Students’ Allowance. Funding is not yet available.</p></div>
     </div>
