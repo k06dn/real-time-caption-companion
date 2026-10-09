@@ -33,4 +33,4 @@
 ## Visual cleanup
 - [x] Remove all halftone-dot decoration, including the demo slide pattern.
 - [x] Simplify the founder story into a clearer portrait, quote, and concise context.
-- [ ] Verify the cleaned homepage at desktop and mobile widths and recheck demo controls.
+- [x] Verify the cleaned homepage at desktop and mobile widths and recheck demo controls.
