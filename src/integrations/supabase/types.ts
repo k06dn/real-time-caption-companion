@@ -16,6 +16,7 @@ export type Database = {
     Tables: {
       beta_waitlist: {
         Row: {
+          affiliation: string | null
           created_at: string
           email: string
           full_name: string
@@ -23,6 +24,7 @@ export type Database = {
           role: string
         }
         Insert: {
+          affiliation?: string | null
           created_at?: string
           email: string
           full_name: string
@@ -30,6 +32,7 @@ export type Database = {
           role?: string
         }
         Update: {
+          affiliation?: string | null
           created_at?: string
           email?: string
           full_name?: string
