@@ -210,3 +210,7 @@ a:focus-visible,button:focus-visible,[role=tab]:focus-visible { outline:2px soli
 .site-header nav a,.site-footer nav a { display:inline-flex; align-items:center; min-height:44px; }
 @media(max-width:370px) { .hero h1 { font-size:36px; }.demo-toolbar [role=tab] { padding-inline:4px; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
+@media (max-width:900px) {
+  .waitlist-section { padding-block:70px; }
+  .waitlist-inner { grid-template-columns:1fr; gap:40px; }
+}
