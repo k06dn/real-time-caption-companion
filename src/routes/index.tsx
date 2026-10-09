@@ -2,7 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowDown, ArrowUpRight, BookOpen, CheckCheck, GraduationCap, MessageSquareText, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CaptionDemo } from '@/components/caption-demo';
-import { Scribble, Doodle } from '@/components/doodles';
+import { Scribble } from '@/components/doodles';
 import { WaitlistForm } from '@/components/waitlist-form';
 import nishitPortrait from '@/assets/nishit-portrait.png.asset.json';
 
@@ -21,7 +21,7 @@ export const Route = createFileRoute('/')({
 function Brand() { return <a href="#" className="brand" aria-label="Caption+ home">Caption<span className="brand-plus">+</span></a>; }
 function Introduction() {
   return <section className="hero page-width">
-    <h1>Live captions that<br/>work like <em><Scribble>subtitles.</Scribble></em><Doodle type="star" className="doodle-hero"/></h1>
+    <h1>Live captions that<br/>work like <em><Scribble>subtitles.</Scribble></em></h1>
     <p>Stay with the lecture. Follow every voice.<br/>Clear, steady captions that don’t get in the way.</p>
     <div className="hero-actions"><Button variant="caption" size="lg" asChild><a href="#waitlist">Join the waitlist <ArrowUpRight/></a></Button><Button variant="outline" size="lg" asChild><a href="#demo">See it in action <ArrowDown/></a></Button></div>
     <div className="pilot-line"><GraduationCap size={28} aria-hidden="true"/><p>Piloting at <strong>UAL Creative Computing Institute</strong></p></div>
@@ -64,13 +64,13 @@ function Faq() {
 }
 
 function Supporters() {
-  return <section className="supporters-section page-width" aria-labelledby="supporters-heading"><h2 id="supporters-heading" className="supporters-title"><Doodle type="squiggle" className="doodle-left"/><Scribble variant="circle">Supported by</Scribble><Doodle type="star" className="doodle-right"/></h2><div className="supporters-grid"><div><Award size={22} aria-hidden="true"/><strong>UAL Social Purpose<br/>Innovation Fund</strong></div><div><Award size={22} aria-hidden="true"/><strong>Pitch It</strong><span>Top prize winner</span></div><div><Award size={22} aria-hidden="true"/><strong>London Social Ventures</strong><span>Build grant</span></div></div></section>;
+  return <section className="supporters-section page-width" aria-labelledby="supporters-heading"><h2 id="supporters-heading" className="supporters-title"><Scribble>Supported by</Scribble></h2><div className="supporters-grid"><div><Award size={22} aria-hidden="true"/><strong>UAL Social Purpose<br/>Innovation Fund</strong></div><div><Award size={22} aria-hidden="true"/><strong>Pitch It</strong><span>Top prize winner</span></div><div><Award size={22} aria-hidden="true"/><strong>London Social Ventures</strong><span>Build grant</span></div></div></section>;
 }
 
 function Waitlist() {
   return <section id="waitlist" className="waitlist-section"><div className="waitlist-inner page-width">
     <div className="waitlist-copy">
-      <h2>Focus on the lecture.<br/><em>Not the <Scribble>missing words.</Scribble></em></h2><Doodle type="arrow" className="doodle-arrow"/>
+      <h2>Focus on the lecture.<br/><em>Not the <Scribble>missing words.</Scribble></em></h2>
       <p>Join the beta waitlist. Tell us a little about you, and we’ll be in touch when places open.</p>
       <div className="dsa-note"><GraduationCap size={26} aria-hidden="true"/><h3>Working towards DSA funding</h3><p>We’re working towards making Caption+ free for eligible UK students through Disabled Students’ Allowance. Funding is not yet available.</p></div>
     </div>
@@ -81,8 +81,8 @@ function Waitlist() {
 function Index() {
   return <div className="site-page">
     <a className="skip-link" href="#main-content">Skip to content</a>
-    <header className="site-header page-width"><Brand/><nav aria-label="Main navigation"><a href="#difference">Why Caption+</a><a href="#story">Our story</a></nav><Button variant="ghost" asChild><a href="#waitlist">Join the waitlist <ArrowUpRight/></a></Button></header>
-    <main id="main-content" tabIndex={-1}><Introduction/><div className="demo-width"><CaptionDemo/></div><Difference/><Story/><Supporters/><Waitlist/></main>
+    <header className="site-header page-width"><Brand/><nav aria-label="Main navigation"><a href="#difference">Why Caption+</a><a href="#story">Our story</a><a href="#faq">FAQ</a></nav><Button variant="ghost" asChild><a href="#waitlist">Join the waitlist <ArrowUpRight/></a></Button></header>
+    <main id="main-content" tabIndex={-1}><Introduction/><div className="demo-width"><CaptionDemo/></div><Difference/><Story/><Supporters/><Faq/><Waitlist/></main>
     <footer className="site-footer page-width"><Brand/><nav aria-label="Legal navigation"><Link to="/privacy">Privacy</Link><Link to="/legal">Legal</Link></nav><span>© 2026 Caption+</span></footer>
   </div>;
 }
