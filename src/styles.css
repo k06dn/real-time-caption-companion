@@ -95,9 +95,11 @@
 .caption-high-contrast .unspoken,.caption-high-contrast .speaker-role { color:var(--caption-high-fg); opacity:.72; }
 .current-word { text-decoration:underline; text-underline-offset:5px; }
 .unspoken { color:var(--caption-dim); }
-.demo-controls { display:flex; align-items:center; justify-content:space-between; min-height:63px; padding:10px 14px; background:var(--background); gap:8px; }
+.demo-controls { display:flex; align-items:center; min-height:63px; padding:10px 14px; background:var(--background); gap:8px; }
 .playback-controls,.demo-actions { display:flex; align-items:center; gap:4px; }
-.demo-controls>p { font-size:16px; color:var(--foreground); padding-left:4px; }
+.demo-controls>p { font-size:16px; color:var(--foreground); padding-left:4px; flex:1; min-width:0; }
+.demo-controls .play-toggle { flex:0 0 auto; }
+.demo-actions { flex:1; justify-content:flex-end; }
 .playback-text { font-size:10px; color:var(--muted-foreground); margin-left:6px; }
 .demo-actions button { font-size:16px; }
 .demo-actions .rounded-full { height:34px; padding-inline:15px; }
