@@ -226,3 +226,4 @@ a:focus-visible,button:focus-visible,[role=tab]:focus-visible { outline:2px soli
 .doodle-left { width: 1.1em; height: .55em; }
 .doodle-right { width: .5em; height: .4em; transform: rotate(12deg); }
 .doodle-arrow { display: block; width: 72px; height: 40px; margin-top: 8px; transform: rotate(-6deg); stroke: currentColor; }
+.story-band .scribble-mark, .waitlist-section .scribble-mark { color: currentColor; }
