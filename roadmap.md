@@ -22,3 +22,10 @@
 - [x] Improve demo playback, microphone recovery, and accessible transcript controls; verified playback, pause, speaker switching, scene panels, export, focus return, and recovery. Actual microphone speech remains unverified.
 - [x] Move UAL pilot information above the demo, format the founder quote with attribution, capitalise Deaf, enlarge Supported by, and replace waitlist copy.
 - [x] Check layout at 1280/845/390/320px, keyboard access, and existing policy page metadata; no overflow, runtime errors, or automated WCAG A/AA findings in the tested homepage state.
+
+## Demo controls and caption motif
+- [x] Remove the browser microphone experience and its related copy.
+- [x] Add keyboard-accessible caption size, contrast, and playback controls.
+- [x] Redesign the Memory management slide as a clear allocate-use-release flow.
+- [x] Add a subtle, static halftone cascade motif across key page transitions.
+- [ ] Verify controls, keyboard flow, reduced motion, transcript actions, and desktop/mobile layouts.
