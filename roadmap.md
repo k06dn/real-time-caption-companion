@@ -51,3 +51,7 @@
 
 ## FAQ presentation
 - [x] Widen the FAQ to the full page container so questions, answers, and divider lines all span edge to edge; verified at 1280/845/390px with no overflow.
+
+## Caption bar readability
+- [x] Give the caption bar its own solid, slightly lighter charcoal panel with a hairline edge, so it reads as a deliberate opaque strip rather than heavy black.
+- [x] Lighten the unspoken-word grey so it stays AA-legible on the lighter panel; verified 13.7:1 for spoken text and 6.6:1 for unspoken text, with high contrast unchanged at 18.5:1, at 1280/390px.
