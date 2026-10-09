@@ -5,7 +5,7 @@
 - [x] Verify desktop/mobile layout, playback, scene switches, and transcript download; actual microphone speech remains unverified.
 
 ## Calm, minimal revision
-- [ ] Remove all eyebrows and simplify the page into a clear introduction, demo, benefits, story, and waitlist.
-- [ ] Use the supplied Ensaio serif, retain green accents, and add meaningful icons.
-- [ ] Show multiple scripted speakers with initials portraits, without green status lights.
-- [ ] Verify layout, font loading, speaker switches, playback, and transcript export.
+- [x] Remove all eyebrows and simplify the page into a clear introduction, demo, benefits, story, and waitlist.
+- [x] Use the supplied Ensaio serif, retain green accents, and add meaningful icons. Supplied fonts are trial editions; publishing license must be checked by the owner.
+- [x] Show multiple scripted speakers with initials portraits, without green status lights.
+- [x] Verify desktop/mobile layout, font loading, all three speaker selections, playback controls, scene changes, and transcript export; no runtime errors or mobile overflow. Actual microphone speech remains unverified.
