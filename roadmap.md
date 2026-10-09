@@ -29,3 +29,8 @@
 - [x] Redesign the Memory management slide as a clear allocate-use-release flow.
 - [x] Add a subtle, static halftone cascade motif across key page transitions.
 - [x] Verify controls, keyboard flow, reduced motion, transcript actions, and desktop/mobile layouts.
+
+## Visual cleanup
+- [x] Remove all halftone-dot decoration, including the demo slide pattern.
+- [x] Simplify the founder story into a clearer portrait, quote, and concise context.
+- [ ] Verify the cleaned homepage at desktop and mobile widths and recheck demo controls.

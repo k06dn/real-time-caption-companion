@@ -11,7 +11,7 @@
 
 - Keep the Caption+ homepage composed of focused presentation components with semantic visual tokens in src/styles.css, so the editorial design remains consistent.
 - The interactive demo runs client-side with a scripted lecture and accessibility settings; it does not imply the production Caption+ engine or speaker identification.
-- Use subtle static CSS halftone cascades as the recurring Caption+ visual motif, keeping every instance decorative and non-interactive for accessibility.
+- Keep the Caption+ visual system clean and free of halftone-dot decoration, prioritizing typography and generous space.
 - Keep demo scenes in associated Radix tab panels and the transcript in a focus-managed inline region, so keyboard and assistive-technology users can navigate without obscuring captions.
 - Send waitlist registrations to the existing Caption+ website until a registration service is explicitly connected, avoiding false signup confirmations.
 - Pre-optimize route-split UI dependencies and reject outdated optimizer requests in Vite, so hot updates cannot combine mismatched React instances.
