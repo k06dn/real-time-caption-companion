@@ -14,3 +14,4 @@
 - Send waitlist registrations to the existing Caption+ website until a registration service is explicitly connected, avoiding false signup confirmations.
 - Pre-optimize route-split UI dependencies and reject outdated optimizer requests in Vite, so hot updates cannot combine mismatched React instances.
 - Load supplied heading fonts with local @font-face declarations using CDN asset pointers, so typography stays consistent without bundling uploaded binaries.
+- Keep app-owned legal and privacy content on separate routes using a shared PolicyPage; publish only supplied facts and clearly identify incomplete policies until the owner approves full text.
